@@ -16,8 +16,9 @@ conda init
 pip install tortoise-tts
 pip install torchaudio
 ```
+ 5. Create new folder (name what you will put as the name in genvish.py) in TorToiSe install location, add recording to location
  5. Run genvish.py (Found on this GitHub site)
 ```bash
-python genvish.py -i <input audio folder> -o output file name
+python genvish.py -n <Audio Folder Name> -i <Input Text File>
 ```
 
