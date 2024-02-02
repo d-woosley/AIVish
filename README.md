@@ -24,4 +24,4 @@ pip install torchaudio
 ```bash
 python genvish.py -n <Audio Folder Name> -i <Input Text File>
 ```
-
+> **NOTE**: as it stands right now you will need to create a folder named the same thing as your Audio folder in the local directory
