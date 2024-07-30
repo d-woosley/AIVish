@@ -31,3 +31,4 @@ pip install torchaudio
 python genvish.py -n <Audio Folder Name> -i <Input Text File>
 ```
 > **NOTE**: as it stands right now you will need to create a folder named the same thing as your Audio folder in the local directory
+> **NOTE**: Input audio should be in WAV format and you should have 3-5 clips of about 10 seconds in length. (Audio files capture in Audacity in the past)
