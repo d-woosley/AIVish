@@ -31,4 +31,23 @@ pip install torchaudio
 python genvish.py -n <Audio Folder Name> -i <Input Text File>
 ```
 > **NOTE**: as it stands right now you will need to create a folder named the same thing as your Audio folder in the local directory
+
 > **NOTE**: Input audio should be in WAV format and you should have 3-5 clips of about 10 seconds in length. (Audio files capture in Audacity in the past)
+
+
+## Example:
+```bash
+scp -i <SSH_KEY> jdoe.zip ubuntu@<IP>:/opt/conda/lib/python3.10/site-packages/tortoise/voices/
+ssh -i <SSH_KEY> ubuntu@<IP>
+cd /opt/conda/lib/python3.10/site-packages/tortoise/voices/
+mkdir jdoe
+unzip jdoe.zip
+mv *.wav ./jdoe
+rm jdoe.zip
+cd ~
+vim clonetext.txt
+mkdir jdoe
+python genvish.py -n jdoe -i clonetext.txt
+exit
+scp -i <SSH_KEY> ubuntu@<IP>:/home/ubuntu/jdoe/voice_clone.wav
+```
