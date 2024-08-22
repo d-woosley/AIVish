@@ -1,10 +1,15 @@
 # AIVish
-Voice Cloning with AI for Vishing
+Generate voice cloned audio recording using tortoise-tts for security awareness testing.
+
+# Disclaimer
+This project is not complete and the below notes and script in this project are just a proof-of-concept. I do intend to clean it up down the road but please submit pull requests and issues for suggested improvements.
+
+> **NOTE**: As with any pentesting tool, this should only be used only with proper authorization during security awareness training.
 
 # Setup
  1. Create new instance in AWS
   - AMI: Deep Learning Proprietary Nvidia Driver AMI GPU PyTorch 2.0.1 (Ubuntu 20.04) 20240116 _(Under Community AMIs)_
-  - Instance: G4dn.xlarge (Cheapest NVIDIA GPU on AWS)
+  - Instance: G4dn.xlarge (_Cheapest NVIDIA GPU on AWS_)
  2. SSH to new instance
 ```bash
 ssh -i <KEY> ubuntu@<PUBLIC_IP>
@@ -15,7 +20,7 @@ conda init
 *exit and rejoin ssh session to reload shell*
 ```
 
-> **NOTE**: Conda may be unneeded but I'm not 100% sure 
+> **NOTE**: Conda may be unneeded but I'm not 100% sure. I need to test again without it to confirm.
 
  4. Install TorToiSe and Torch Audio
 ```bash
