@@ -32,6 +32,9 @@ pip install torchaudio
 > **NOTE**: By default, the TorToiSe install location is `/opt/conda/lib/python3.10/site-packages/tortoise/voices/` when installed with conda like the instructions above. If this is the case, you can just create a folder inside that directory and add your audio files to the folder.
   
  5. Run genvish.py (Found on this GitHub site)
+
+You will need to create a basic text file in tell the TTS what text to generate. I would suggest only doing one sentence at a time as anything more can take a very long time to generate! If needed, you can merge multiple clips together afterwards in Audacity.
+
 ```bash
 python genvish.py -n <Audio Folder Name> -i <Input Text File>
 ```
