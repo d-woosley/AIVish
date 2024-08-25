@@ -5,7 +5,7 @@ Generate voice cloned audio recordings using tortoise-tts for security awareness
 As with any pentesting tool, this should only be used only with proper authorization during security awareness training (vishing). There are a number of checks to prevent abusive use of the tool for anything related to extortion, threats, slurs and foul language, and anything sexual or content related to war and terrorism.
 
 # Installation
-You can run this tool on any system, however, it is **VERY** resource intensive (GPU and disk space). If you don't have any system that can handle that, you can spin up a G4dn.xlarge (_Cheapest NVIDIA GPU on AWS_). I have tested this tool on a G4dn.xlarge (~$0.50 an hour) running the `Deep Learning Proprietary Nvidia Driver AMI GPU PyTorch` community AMIs.
+You can run this tool on any system! Although I have gotten it to run on a small Kali VM, it is **VERY** resource intensive and also requires about takes \~20 gigs of storage. If you don't have any system that can handle that, you can spin up a G4dn.xlarge (_Cheapest NVIDIA GPU on AWS_). I have tested this tool on a G4dn.xlarge (~$0.50 an hour) running the `Deep Learning Proprietary Nvidia Driver AMI GPU PyTorch` community AMIs.
 
 ```bash
 pip install git+https://github.com/d-woosley/AIVish
