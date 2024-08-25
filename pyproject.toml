@@ -1,0 +1,25 @@
+[project]
+name = "aivish"
+version = "1.0.1"
+description = "aivish: Generate voice cloned audio recordings using tortoise-tts for security awareness testing."
+authors = [
+    { name = "Duncan Woosley"}
+]
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "tortoise-tts",
+    "torchaudio",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["aivish*"]
+exclude = ["tests*"]
+
+[project.scripts]
+aivish = "aivish.run:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
