@@ -2,10 +2,10 @@
 Generate voice cloned audio recordings using tortoise-tts for security awareness testing.
 
 # Disclaimer
-As with any pentesting tool, this should only be used only with proper authorization during security awareness training (vishing). There are a number of checks to prevent abusive use of the tool for anything related to extortion, threats, slurs and foul language, and anything sexual or content related to war and terrorism.
+As with any pentesting tool, this should only be used with proper authorization during security awareness training (phishing/vishing). There are a number of checks to prevent abusive use of the tool for anything related to extortion, threats, slurs and foul language, and anything sexual or content related to war and terrorism.
 
 # Installation
-You can run this tool on any system, however, it's designed to work with NVIDIA GPUs and you may loose quality if your not on a system with a NVIDIA GPU. In the most extreme case, I have gotten AIVish to run on a small Kali VM running on a laptop. Note that AIVish is **VERY** resource intensive and also requires about takes \~20 gigs of storage. If you don't have any system that can handle that, you can spin up a G4dn.xlarge (_Cheapest NVIDIA GPU on AWS_) to run this tool. I have tested this tool on a G4dn.xlarge (~$0.50 an hour) running the `Deep Learning Proprietary Nvidia Driver AMI GPU PyTorch` community AMIs and it works well!
+You can run this tool on any system, however, it's designed to work with NVIDIA GPUs and you may lose quality if you're not on a system with an NVIDIA GPU. In the most extreme case, I have gotten AIVish to run on a small Kali VM running on a laptop. Note that AIVish is **VERY** resource intensive and also requires about \~20 gigs of storage. If you don't have any system that can handle that, you can spin up a G4dn.xlarge (_Cheapest NVIDIA GPU on AWS_) to run this tool. I have tested this tool on a G4dn.xlarge (~$0.50 an hour) running the `Deep Learning Proprietary Nvidia Driver AMI GPU PyTorch` community AMIs and it works well!
 
 ```bash
 pip install git+https://github.com/d-woosley/AIVish
