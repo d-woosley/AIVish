@@ -11,6 +11,9 @@ You can run this tool on any system, however, it's designed to work with NVIDIA 
 pip install git+https://github.com/d-woosley/AIVish
 ```
 
+> **NOTE**: Make sure you system is updated before installing (`sudo apt update && sudo apt upgrade -y`)
+> **NOTE**: If you get an error related to a missing rust compiler (`error: can't find Rust compiler`), you will need to install Rust (`sudo apt install rustc`)
+
 # Run
 You will need a zip file containing 3-5 audio clips (around 10 seconds each) of the voice you want to clone (.wav format).
 
