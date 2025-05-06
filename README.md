@@ -13,7 +13,21 @@ pip install git+https://github.com/d-woosley/AIVish
 
 > **NOTE**: Make sure you system is updated before installing (`sudo apt update && sudo apt upgrade -y`)
 
-> **NOTE**: If you get an error related to a missing rust compiler (`error: can't find Rust compiler`), you will need to install Rust (`sudo apt install rustc`)
+## Troubleshooting Install
+I've noticed that the recent versions of Deep Learning Proprietary Nvidia Driver AMI GPU PyTorch don't come with Rust (`error: can't find Rust compiler`) with is needed for tokenizers. To fix this issue, I had to install rust and run as root.
+
+**Troubleshooting Install**
+```bash
+sudo -s
+apt update
+apt upgrade -y
+python3 -m pip install --upgrade pip
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source ~/.bashrc
+
+# Install aivish
+pip install git+https://github.com/d-woosley/AIVish
+```
 
 # Run
 You will need a zip file containing 3-5 audio clips (around 10 seconds each) of the voice you want to clone (.wav format).
